@@ -1,14 +1,15 @@
 import "./App.css";
 import Home from "./pages/Home";
 import { ThemeProvider } from "@mui/material/styles";
-import { theme } from "./Foundation/theme";
+import { appTheme } from "./foundation/theme";
+import Layout from "./layouts/Layout";
 
 function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className="App">
+    <ThemeProvider theme={appTheme}>
+      <Layout>
         <Home />
-      </div>
+      </Layout>
     </ThemeProvider>
   );
 }
