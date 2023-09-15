@@ -13,6 +13,12 @@ import initialEdges from "./edges.js";
 const rfStyle = {
   backgroundColor: "#D0C0F7",
 };
+const EdgeMarker = {
+  type: "arrow",
+  color: "#000",
+  orient: "auto",
+  strokeWidth: 1,
+};
 
 function CourseBlock() {
   const [nodes, setNodes] = useState(initialNodes);
@@ -36,15 +42,13 @@ function CourseBlock() {
       <ReactFlow
         nodes={nodes}
         edges={edges}
-        onNodesChange={onNodesChange}
-        onEdgesChange={onEdgesChange}
-        onConnect={onConnect}
-        fitView
-        style={rfStyle}
-        attributionPosition="top-right"
-      >
-        <Background />
-      </ReactFlow>
+        // onNodesChange={onNodesChange}
+        // onEdgesChange={onEdgesChange}
+        // onConnect={onConnect}
+        // fitView
+        // style={rfStyle}
+        // attributionPosition="top-right"
+      ></ReactFlow>
     </div>
   );
 }
