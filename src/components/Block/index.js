@@ -4,7 +4,6 @@ import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import { ArcherElement } from "react-archer";
-import "./styles.css";
 import { getSemesterLabel, getCourseType } from "../../utils";
 
 const Block = (props) => {
