@@ -1,24 +1,169 @@
 {
-  "courses": [
+  "headerDetail": {
+    "school_name": "California State University Los Angeles",
+    "department": "Department of Electrical and Computer Engineering",
+    "title": "Bachelor of Science in Electrical Engineering 122 Units 2023-2024"
+  },
+  "sections": [
     {
-      "course_code": "EE 2440",
-      "category_id": 0,
-      "category": "Transferable Courses from ELAC",
-      "course": "ENG GEN 225",
-      "course_title": "Digital Circuit Analysis",
-      "offered_sessions": ["fall", "spring"],
-      "prerequisite": [],
-      "co_requisite": ["EE 2449"]
+      "title": "Freshman Year",
+      "unit1": 16,
+      "unit2": 16,
+      "courses": [
+        {
+          "course_code": "EE 2440",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2449"]
+        },
+        {
+          "course_code": "EE 2449",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 2,
+          "course_type": "Lower Division",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": [""]
+        },
+        {
+          "course_code": "EE 2440",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2449"]
+        },
+        {
+          "course_code": "EE 2449",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 2,
+          "course_type": "Lower Division",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": [""]
+        },
+        {
+          "course_code": "EE 2440",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2449"]
+        }
+      ]
     },
     {
-      "course_code": "EE 2449",
-      "category_id": 0,
-      "category": "Transferable Courses from ELAC",
-      "course": "ENG GEN 225",
-      "course_title": "Digital Circuit Analysis",
-      "offered_sessions": ["fall", "spring"],
-      "prerequisite": [],
-      "co_requisite": [""]
+      "title": "Sophomore Year",
+      "unit1": 17,
+      "unit2": 17,
+      "courses": [
+        {
+          "course_code": "EE 2440",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2449"]
+        },
+        {
+          "course_code": "EE 2449",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 2,
+          "course_type": "Lower Division",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": [""]
+        }
+      ]
+    },
+    {
+      "title": "Junior Year",
+      "unit1": 16,
+      "unit2": 16,
+      "courses": [
+        {
+          "course_code": "EE 2440",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2449"]
+        },
+        {
+          "course_code": "EE 2449",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 2,
+          "course_type": "Lower Division",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": [""]
+        }
+      ]
+    },
+    {
+      "title": "Senior Year",
+      "unit1": 13,
+      "unit2": 13,
+      "courses": [
+        {
+          "course_code": "EE 2440",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "Upper Division",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2449"]
+        },
+        {
+          "course_code": "EE 2449",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 2,
+          "course_type": "Senior Design",
+          "course_title": "Digital Circuit Analysis",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": [""]
+        }
+      ]
     }
   ]
 }
