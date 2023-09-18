@@ -35,7 +35,7 @@
           "co_requisite": [""]
         },
         {
-          "course_code": "EE 2440",
+          "course_code": "EE 2450",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -47,7 +47,7 @@
           "co_requisite": ["EE 2449"]
         },
         {
-          "course_code": "EE 2449",
+          "course_code": "EE 2459",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -59,7 +59,7 @@
           "co_requisite": [""]
         },
         {
-          "course_code": "EE 2440",
+          "course_code": "EE 2460",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -78,7 +78,7 @@
       "unit2": 17,
       "courses": [
         {
-          "course_code": "EE 2440",
+          "course_code": "EE 2470",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -90,7 +90,7 @@
           "co_requisite": ["EE 2449"]
         },
         {
-          "course_code": "EE 2449",
+          "course_code": "EE 2469",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -109,7 +109,7 @@
       "unit2": 16,
       "courses": [
         {
-          "course_code": "EE 2440",
+          "course_code": "EE 2480",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -121,7 +121,7 @@
           "co_requisite": ["EE 2449"]
         },
         {
-          "course_code": "EE 2449",
+          "course_code": "EE 2479",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -140,7 +140,7 @@
       "unit2": 13,
       "courses": [
         {
-          "course_code": "EE 2440",
+          "course_code": "EE 2490",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
@@ -152,7 +152,7 @@
           "co_requisite": ["EE 2449"]
         },
         {
-          "course_code": "EE 2449",
+          "course_code": "EE 2489",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",

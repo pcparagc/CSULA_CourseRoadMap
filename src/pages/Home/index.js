@@ -1,12 +1,10 @@
 import { Chip, Grid, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
-import { ArcherContainer } from "react-archer";
 import Logo from "../../assets/images/csula_logo.png";
 import Block from "../../components/Block";
 import DialogBox from "../../components/DialogBox";
 import data from "../../data/courses.json";
 import { getCourseType } from "../../utils";
-
 const offered_sessions = [
   {
     title: "Offered in fall",
@@ -111,29 +109,39 @@ const Home = () => {
                 </Typography>
                 <SquareWithNumber number={section.unit1 + section.unit2} />
               </div>
-              <ArcherContainer>
-                <div style={{ display: "flex", flexWrap: "wrap" }}>
-                  {section.courses.map((course, innerIndex) => (
-                    <div
-                      style={{ margin: "20px", cursor: "pointer" }}
-                      onClick={() => handleClickOpen(course)}
-                    >
-                      <Block key={innerIndex} data={course} />
-                    </div>
-                  ))}
-                </div>
-              </ArcherContainer>
+              <div style={{ display: "flex", flexWrap: "wrap" }}>
+                {section.courses.map((course, innerIndex) => (
+                  <div
+                    style={{ margin: "20px", cursor: "pointer" }}
+                    onClick={() => handleClickOpen(course)}
+                  >
+                    <Block
+                      key={`b-${innerIndex}`}
+                      className={course.course_code}
+                      data={course}
+                    />
+                  </div>
+                ))}
+              </div>
             </Grid>
           ))}
         </Grid>
         <div style={{ display: "flex" }}>
           <div>
-            <Typography type="block">
+            <Typography
+              variant="subtitle1"
+              style={{ fontWeight: "bold" }}
+              type="block"
+            >
               Course typically offered at CSULA
             </Typography>
             {offered_sessions?.map((session, index) => (
               <div
-                style={{ display: "flex", alignItems: "center" }}
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  alignItems: "center",
+                }}
                 key={index}
               >
                 <Chip
@@ -151,20 +159,28 @@ const Home = () => {
           <div style={{ display: "flex", flexDirection: "column" }}>
             <div style={{ flex: 1, marginLeft: "20px" }}>
               <div style={{ display: "flex" }}>
-                <Typography>Color Key:</Typography>
-                {course_type.map((type) => (
-                  <div
-                    style={{
-                      ...getCourseType(type),
-                      borderRadius: "10px",
-                      padding: "0px 10px",
-                      margin: "0px 10px",
-                      textAlign: "center",
-                    }}
-                  >
-                    {type}
-                  </div>
-                ))}
+                <Typography
+                  variant="subtitle1"
+                  style={{ fontWeight: "bold", marginRight: "10px" }}
+                  type="block"
+                >
+                  Color Key:
+                </Typography>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
+                  {course_type.map((type) => (
+                    <div
+                      style={{
+                        ...getCourseType(type),
+                        borderRadius: "10px",
+                        padding: "5px 10px",
+                        margin: "0px 10px 10px 0px",
+                        textAlign: "center",
+                      }}
+                    >
+                      {type}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
             <div style={{ flex: 1, marginLeft: "20px" }}>
