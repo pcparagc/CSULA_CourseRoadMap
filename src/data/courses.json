@@ -18,7 +18,7 @@
           "course_unit": 3,
           "course_type": "General Education",
           "course_title": "Digital Circuit Analysis",
-          "offered_sessions": ["fall", "spring"],
+          "offered_sessions": ["fall", "spring", "summer"],
           "prerequisite": [],
           "co_requisite": ["EE 2449"]
         },
@@ -114,7 +114,7 @@
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
           "course_unit": 3,
-          "course_type": "General Education",
+          "course_type": "Technical Elective",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
           "prerequisite": [],

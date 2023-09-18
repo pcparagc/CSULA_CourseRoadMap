@@ -33,6 +33,11 @@ export const getCourseType = (course_type) => {
         backgroundColor: "#D4F3ED",
         border: "2px solid #28AAE3",
       };
+    case "Technical Elective":
+      return {
+        backgroundColor: "#2AD8C4",
+        border: "2px solid #019778",
+      };
     default:
       return {
         backgroundColor: "#A2D40B",

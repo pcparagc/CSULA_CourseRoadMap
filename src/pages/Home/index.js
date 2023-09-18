@@ -1,10 +1,34 @@
-import { Grid, Paper, Typography } from "@mui/material";
+import { Chip, Grid, Paper, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { ArcherContainer } from "react-archer";
 import Logo from "../../assets/images/csula_logo.png";
 import Block from "../../components/Block";
-import data from "../../data/courses.json";
 import DialogBox from "../../components/DialogBox";
+import data from "../../data/courses.json";
+import { getCourseType } from "../../utils";
+
+const offered_sessions = [
+  {
+    title: "Offered in fall",
+    initials: "F",
+  },
+  {
+    title: "Offered in spring",
+    initials: "S",
+  },
+  {
+    title: "Offered in summer",
+    initials: "X",
+  },
+];
+
+const course_type = [
+  "General Education",
+  "Lower Division",
+  "Upper Division",
+  "Senior Design",
+  "Technical Elective",
+];
 const Home = () => {
   const { sections, headerDetail } = data;
   console.log("courses", sections);
@@ -88,7 +112,7 @@ const Home = () => {
                 <SquareWithNumber number={section.unit1 + section.unit2} />
               </div>
               <ArcherContainer>
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex", flexWrap: "wrap" }}>
                   {section.courses.map((course, innerIndex) => (
                     <div
                       style={{ margin: "20px", cursor: "pointer" }}
@@ -102,6 +126,53 @@ const Home = () => {
             </Grid>
           ))}
         </Grid>
+        <div style={{ display: "flex" }}>
+          <div>
+            <Typography type="block">
+              Course typically offered at CSULA
+            </Typography>
+            {offered_sessions?.map((session, index) => (
+              <div
+                style={{ display: "flex", alignItems: "center" }}
+                key={index}
+              >
+                <Chip
+                  label={session.initials}
+                  color="primary"
+                  size="small"
+                  style={{ margin: "5px", backgroundColor: "#2E3092" }}
+                />
+                <Typography style={{ textAlign: "center" }}>
+                  {session.title}
+                </Typography>
+              </div>
+            ))}
+          </div>
+          <div style={{ display: "flex", flexDirection: "column" }}>
+            <div style={{ flex: 1, marginLeft: "20px" }}>
+              <div style={{ display: "flex" }}>
+                <Typography>Color Key:</Typography>
+                {course_type.map((type) => (
+                  <div
+                    style={{
+                      ...getCourseType(type),
+                      borderRadius: "10px",
+                      padding: "0px 10px",
+                      margin: "0px 10px",
+                      textAlign: "center",
+                    }}
+                  >
+                    {type}
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div style={{ flex: 1, marginLeft: "20px" }}>
+              <Typography>Prerequisite</Typography>
+              <Typography>Co-requisite</Typography>
+            </div>
+          </div>
+        </div>
       </Paper>
       <DialogBox
         open={openDialog}
