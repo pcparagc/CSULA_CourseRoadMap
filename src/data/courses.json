@@ -16,23 +16,114 @@
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
           "course_unit": 3,
-          "course_type": "General Education",
-          "course_title": "Digital Circuit Analysis",
-          "offered_sessions": ["fall", "spring", "summer"],
+          "course_type": "Lower Division",
+          "course_title": "Digital Engineering",
+          "offered_sessions": ["fall", "spring"],
           "prerequisite": [],
-          "co_requisite": ["EE 2449"]
+          "co_requisite": ["EE 2449"],
+          "relations": [
+            {
+              "targetCourseCode": "EE 2449",
+              "label": "Prerequisite",
+              "color": "red"
+            }
+          ]
+        },
+        {
+          "course_code": "Math 2110",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 4,
+          "course_type": "Lower Division",
+          "course_title": "Calculus I",
+          "offered_sessions": ["fall", "spring", "summer"],
+          "prerequisite": ["MATH 2120", "PHYS 2100"],
+          "co_requisite": []
+        },
+        {
+          "course_code": "ENGR 1500",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "Intro to Engr. and Tech.",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": ["EE 2450"]
+        },
+        {
+          "course_code": "Block A",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "A2 ENGL 1005B or 1010",
+          "offered_sessions": ["fall", "spring","summer"],
+          "prerequisite": ["ENGL 2030"],
+          "co_requisite": []
+        },
+        {
+          "course_code": "Block A",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "General Education",
+          "course_title": "A1 COMM 1100/HNRS 1100",
+          "offered_sessions": ["fall", "spring"],
+          "prerequisite": [],
+          "co_requisite": []
         },
         {
           "course_code": "EE 2449",
           "category_id": 0,
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
-          "course_unit": 2,
+          "course_unit": 1,
           "course_type": "Lower Division",
-          "course_title": "Digital Circuit Analysis",
+          "course_title": "Digital Logic Lab",
           "offered_sessions": ["fall", "spring"],
           "prerequisite": [],
-          "co_requisite": [""]
+          "co_requisite": []
+        },
+        {
+          "course_code": "MATH 2120",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 4,
+          "course_type": "Lower Division",
+          "course_title": "Calculus II",
+          "offered_sessions": ["fall", "spring","summer"],
+          "prerequisite": ["MATH 2130"],
+          "co_requisite": ["EE2040"]
+        },
+        {
+          "course_code": "PHYS 2100",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 5,
+          "course_type": "Lower Division",
+          "course_title": "Physics I: Mechanics",
+          "offered_sessions": ["fall", "spring","summer"],
+          "prerequisite": ["PHYS 2200"],
+          "co_requisite": []
+        },
+        {
+          "course_code": "EE 2030",
+          "category_id": 0,
+          "category": "Transferable Courses from ELAC",
+          "course": "ENG GEN 225",
+          "course_unit": 3,
+          "course_type": "Lower Division",
+          "course_title": "Intro to Techincal Writing",
+          "offered_sessions": ["fall", "spring", "summer"],
+          "prerequisite": [],
+          "co_requisite": []
         },
         {
           "course_code": "EE 2450",
@@ -40,35 +131,11 @@
           "category": "Transferable Courses from ELAC",
           "course": "ENG GEN 225",
           "course_unit": 3,
-          "course_type": "General Education",
-          "course_title": "Digital Circuit Analysis",
-          "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
-          "co_requisite": ["EE 2449"]
-        },
-        {
-          "course_code": "EE 2459",
-          "category_id": 0,
-          "category": "Transferable Courses from ELAC",
-          "course": "ENG GEN 225",
-          "course_unit": 2,
           "course_type": "Lower Division",
-          "course_title": "Digital Circuit Analysis",
+          "course_title": "Embedded System Programming I",
           "offered_sessions": ["fall", "spring"],
           "prerequisite": [],
-          "co_requisite": [""]
-        },
-        {
-          "course_code": "EE 2460",
-          "category_id": 0,
-          "category": "Transferable Courses from ELAC",
-          "course": "ENG GEN 225",
-          "course_unit": 3,
-          "course_type": "General Education",
-          "course_title": "Digital Circuit Analysis",
-          "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
-          "co_requisite": ["EE 2449"]
+          "co_requisite": []
         }
       ]
     },
