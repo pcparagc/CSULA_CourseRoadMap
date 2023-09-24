@@ -1,5 +1,6 @@
 import { Chip, Grid, Paper, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import Xarrow, { useXarrow, Xwrapper } from "react-xarrows";
 import Logo from "../../assets/images/csula_logo.png";
 import Block from "../../components/Block";
 import DialogBox from "../../components/DialogBox";
@@ -29,6 +30,7 @@ const course_type = [
 ];
 const Home = () => {
   const { sections, headerDetail } = data;
+  const updateXarrow = useXarrow();
   console.log("courses", sections);
   const [openDialog, setOpenDialog] = useState(false);
   const [dialogContent, setDialogContent] = useState({});
@@ -110,18 +112,27 @@ const Home = () => {
                 <SquareWithNumber number={section.unit1 + section.unit2} />
               </div>
               <div style={{ display: "flex", flexWrap: "wrap" }}>
-                {section.courses.map((course, innerIndex) => (
-                  <div
-                    style={{ margin: "20px", cursor: "pointer" }}
-                    onClick={() => handleClickOpen(course)}
-                  >
-                    <Block
-                      key={`b-${innerIndex}`}
-                      className={course.course_code}
-                      data={course}
-                    />
-                  </div>
-                ))}
+                <Xwrapper>
+                  {section.courses.map((course, innerIndex) => (
+                    <div
+                      style={{ margin: "20px", cursor: "pointer" }}
+                      onClick={() => handleClickOpen(course)}
+                      id={course.course_code}
+                    >
+                      <Block
+                        key={`b-${innerIndex}`}
+                        className={course.course_code}
+                        data={course}
+                      />
+                      <Xarrow start={"EE 2440"} end="EE 2470" />
+                    </div>
+                  ))}
+                  {/* <Xarrow
+                    start={"EE 2440"}
+                    end="EE 2469"
+                    startAnchor={"bottom"}
+                  /> */}
+                </Xwrapper>
               </div>
             </Grid>
           ))}
