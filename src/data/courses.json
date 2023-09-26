@@ -220,7 +220,7 @@
           "course_type": "Lower Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": ["EE 2040"],
+          "prerequisite": [],
           "co_requisite": []
         },
         {
@@ -244,7 +244,7 @@
           "course_type": "Upper Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": ["EE 2040"],
+          "prerequisite": [],
           "co_requisite": []
         },
         {
@@ -288,7 +288,7 @@
           "course_type": "Upper Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": ["EE 2040"],
+          "prerequisite": [],
           "co_requisite": []
         },
         {
@@ -372,7 +372,7 @@
           "course_type": "Upper Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": ["EE 3020"],
+          "prerequisite": [],
           "co_requisite": []
         },
         {
@@ -396,7 +396,7 @@
           "course_type": "Upper Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": ["EE 3020"],
+          "prerequisite": [],
           "co_requisite": []
         },
         {
@@ -475,7 +475,7 @@
           "course_type": "Upper Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall"],
-          "prerequisite": ["EE 2040"],
+          "prerequisite": [],
           "co_requisite": []
         },
         {
