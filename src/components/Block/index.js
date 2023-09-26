@@ -32,7 +32,11 @@ const Block = (props) => {
         style={{
           ...cardStyle,
           ...courseStyle,
-          border: cardHovered ? "1px solid #FF5722" : "none",
+          display: "flex",
+          flexDirection: "column",
+          // border: cardHovered ? "1px solid #FF5722" : null,
+          opacity: cardHovered ? "0.6" : "1",
+          // boxShadow: cardHovered ? "inset 300px 0 0 0 lighgrey" : "none",
         }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
