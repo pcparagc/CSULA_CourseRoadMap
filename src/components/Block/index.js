@@ -14,7 +14,7 @@ const Block = (props) => {
     const cardStyle = {
       width: 170,
       height: 150,
-      transition: 'border 0.3s'
+      transition: "border 0.3s",
     };
 
     const handleMouseOver = () => {
@@ -27,18 +27,26 @@ const Block = (props) => {
 
     return (
       <Card
-        sx={{ Width: 150, Height: 150 }}
+        sx={{ width: 150, height: 150 }}
         className={props.className}
         style={{
           ...cardStyle,
           ...courseStyle,
-          border: cardHovered ? '1px solid #FF5722' : 'none',
+          border: cardHovered ? "1px solid #FF5722" : "none",
         }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         <CardContent style={{ textAlign: "center" }}>
-          <Typography variant="h6" gutterBottom>
+          <Typography
+            variant="h6"
+            gutterBottom
+            style={{
+              overflow: "hidden",
+              whiteSpace: "nowrap",
+              textOverflow: "ellipsis",
+            }}
+          >
             {course_data.course_code}
           </Typography>
           <Typography variant="subtitle2">
@@ -46,7 +54,14 @@ const Block = (props) => {
           </Typography>
         </CardContent>
 
-        <div style={{ display: "flex", justifyContent: "space-between" }}>
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            alignItems: "flex-end",
+            justifyContent: "space-between",
+          }}
+        >
           <div>
             {course_data.offered_sessions?.map((semester, index) => (
               <Chip

@@ -116,7 +116,11 @@ const Home = () => {
                 <Xwrapper>
                   {section.courses.map((course, innerIndex) => (
                     <div
-                      style={{ margin: "20px", cursor: "pointer", position:"relative" }}
+                      style={{
+                        margin: "20px",
+                        cursor: "pointer",
+                        position: "relative",
+                      }}
                       onClick={() => handleClickOpen(course)}
                       id={course.course_code}
                       className="course-block"
@@ -126,8 +130,8 @@ const Home = () => {
                         className={course.course_code}
                         data={course}
                       />
-                      
-                      {course.prerequisite.map((prereqCode, idx) => (
+
+                      {/* {course.prerequisite.map((prereqCode, idx) => (
                         <Xarrow
                         key={`arrow-${idx}`}
                         start={prereqCode}                    
@@ -156,10 +160,9 @@ const Home = () => {
                         gridBreak="80%"
                         style={{ position: "absolute", zIndex: 1 }}
                         />
-                      ))}
+                      ))} */}
                     </div>
                   ))}
-                  
                 </Xwrapper>
               </div>
             </Grid>
