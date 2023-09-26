@@ -1,4 +1,4 @@
-import { Chip } from "@mui/material";
+import { Chip, Grid } from "@mui/material";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
@@ -11,11 +11,31 @@ const Block = (props) => {
   const courseStyle = getCourseType(data.course_type);
 
   const renderBlock = (course_data) => {
+    const cardStyle = {
+      width: 170,
+      height: 150,
+      transition: 'border 0.3s'
+    };
+
+    const handleMouseOver = () => {
+      setCardHovered(true);
+    };
+
+    const handleMouseOut = () => {
+      setCardHovered(false);
+    };
+
     return (
       <Card
-        sx={{ maxWidth: 150, maxHeight: 150 }}
+        sx={{ Width: 150, Height: 150 }}
         className={props.className}
-        style={courseStyle}
+        style={{
+          ...cardStyle,
+          ...courseStyle,
+          border: cardHovered ? '2px solid #FF5722' : 'none',
+        }}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
       >
         <CardContent style={{ textAlign: "center" }}>
           <Typography variant="h6" gutterBottom>
@@ -45,7 +65,14 @@ const Block = (props) => {
       </Card>
     );
   };
-  return <>{renderBlock(data)}</>;
+
+  const [cardHovered, setCardHovered] = React.useState(false);
+
+  return (
+    <Grid item xs={12} sm={6} md={4} lg={3}>
+      {renderBlock(data)}
+    </Grid>
+  );
 };
 
 export default Block;
