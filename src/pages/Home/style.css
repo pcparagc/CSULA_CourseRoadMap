@@ -1,0 +1,10 @@
+.course-block {
+    position: relative;
+  }
+  
+  .course-block .xarrow-container svg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  

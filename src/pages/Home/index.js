@@ -1,10 +1,13 @@
 import { Chip, Grid, Paper, Typography } from "@mui/material";
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
+import Xarrow, { useXarrow, Xwrapper } from "react-xarrows";
 import Logo from "../../assets/images/csula_logo.png";
 import Block from "../../components/Block";
 import DialogBox from "../../components/DialogBox";
 import data from "../../data/courses.json";
 import { getCourseType } from "../../utils";
+import "./style.css";
+
 const offered_sessions = [
   {
     title: "Offered in fall",
@@ -27,6 +30,7 @@ const course_type = [
   "Senior Design",
   "Technical Elective",
 ];
+
 const Home = () => {
   const { sections, headerDetail } = data;
   console.log("courses", sections);
@@ -110,18 +114,54 @@ const Home = () => {
                 <SquareWithNumber number={section.unit1 + section.unit2} />
               </div>
               <div style={{ display: "flex", flexWrap: "wrap" }}>
-                {section.courses.map((course, innerIndex) => (
-                  <div
-                    style={{ margin: "20px", cursor: "pointer" }}
-                    onClick={() => handleClickOpen(course)}
-                  >
-                    <Block
-                      key={`b-${innerIndex}`}
-                      className={course.course_code}
-                      data={course}
-                    />
-                  </div>
-                ))}
+                <Xwrapper>
+                  {section.courses.map((course, innerIndex) => (
+                    <div
+                      style={{ margin: "20px", cursor: "pointer", position:"relative" }}
+                      onClick={() => handleClickOpen(course)}
+                      id={course.course_code}
+                      className="course-block"
+                    >
+                      <Block
+                        key={`b-${innerIndex}`}
+                        className={course.course_code}
+                        data={course}
+                      />
+                      
+                      {course.prerequisite.map((prereqCode, idx) => (
+                        <Xarrow
+                        key={`arrow-${idx}`}
+                        start={prereqCode}                    
+                        end={course.course_code} 
+                        startAnchor="auto"
+                        endAnchor="auto"
+                        strokeWidth={2}
+                        path="grid"
+                        gridBreak="40"
+                        curveness={0.7}
+                        style={{ position: "absolute", zIndex: 1 }}
+                        />
+                      ))}
+                      {course.co_requisite.map((coreqCode, idx) => (
+                        <Xarrow
+                        key={`arrow-${idx}`}
+                        start={coreqCode}
+                        end={course.course_code}
+                        startAnchor="auto"
+                        endAnchor="auto"
+                        strokeWidth={2}
+                        dashness={{ animation: 1 }}
+                        path="grid"
+                        curveness={1}
+                        color='red'
+                        gridBreak="80%"
+                        style={{ position: "absolute", zIndex: 1 }}
+                        />
+                      ))}
+                    </div>
+                  ))}
+                  
+                </Xwrapper>
               </div>
             </Grid>
           ))}
