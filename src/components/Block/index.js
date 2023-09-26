@@ -32,7 +32,7 @@ const Block = (props) => {
         style={{
           ...cardStyle,
           ...courseStyle,
-          border: cardHovered ? '2px solid #FF5722' : 'none',
+          border: cardHovered ? '1px solid #FF5722' : 'none',
         }}
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
