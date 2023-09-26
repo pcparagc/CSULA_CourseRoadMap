@@ -31,7 +31,7 @@
           "course_type": "Lower Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B5C"],
           "co_requisite": [""]
         },
         {
@@ -43,7 +43,7 @@
           "course_type": "General Education",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B6A", "MATH B5C"],
           "co_requisite": ["EE 2449"]
         },
         {
@@ -55,7 +55,7 @@
           "course_type": "Lower Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B6A"],
           "co_requisite": [""]
         },
         {
@@ -67,7 +67,7 @@
           "course_type": "General Education",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B6A"],
           "co_requisite": ["EE 2449"]
         }
       ]
@@ -86,7 +86,7 @@
           "course_type": "General Education",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B6A"],
           "co_requisite": ["EE 2449"]
         },
         {
@@ -98,7 +98,7 @@
           "course_type": "Lower Division",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B6A"],
           "co_requisite": [""]
         }
       ]
@@ -117,7 +117,7 @@
           "course_type": "Technical Elective",
           "course_title": "Digital Circuit Analysis",
           "offered_sessions": ["fall", "spring"],
-          "prerequisite": [],
+          "prerequisite": ["MATH B6A", "MATH B5C"],
           "co_requisite": ["EE 2449"]
         },
         {
